@@ -3,7 +3,7 @@ import Player from "./Components/Player";
 import { useState } from "react";
 import Log from "./Components/Log";
 import { WINNING_COMBINATIONS } from "./winning_comb";
-import GameOver from "./GamerOver";
+import GameOver from "./Components/GamerOver";
 
 const PLAYERS={
     X: "Player 1",
