@@ -1,0 +1,47 @@
+/* =============== RESULT TABLE =============== */
+#result {
+  max-width: 70rem;
+  width: 90%;
+  margin: 2rem auto;
+  padding: 2rem;
+  border-spacing: 1rem;
+  background: rgba(255, 255, 255, 0.04);
+  border-radius: 10px;
+  backdrop-filter: blur(6px);
+  box-shadow: 0 0 25px rgba(0, 0, 0, 0.4);
+  animation: fadeInUp 0.6s ease-out;
+  font-size: 1.1rem;
+  text-align: center;
+}
+
+#result thead {
+  font-size: 1rem;
+  color: #83e6c0;
+  border-bottom: 2px solid #5ca58b;
+}
+
+#result tbody {
+  font-family: 'Roboto Condensed', sans-serif;
+  font-size: 1rem;
+  color: #c2e9e0;
+}
+
+#result tbody tr:nth-child(even) {
+  background-color: rgba(255, 255, 255, 0.015);
+}
+
+#result tbody tr:hover {
+  transform: scale(1.01);
+  background-color: rgba(255, 255, 255, 0.06);
+  transition: transform 0.2s ease, background-color 0.2s ease;
+}
+
+#result th,
+#result td {
+  padding: 0.75rem;
+  text-align: center;
+}
+
+#result td:nth-child(n+2) {
+  text-align: right;
+}
