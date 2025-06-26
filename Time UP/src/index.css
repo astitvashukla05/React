@@ -1,0 +1,156 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&family=Handjet:wght@400;700&display=swap');
+
+body {
+  margin: 0;
+  font-family: 'Quicksand', sans-serif;
+  background: 
+    linear-gradient(rgba(0, 0, 0, 0.9), rgba(5, 10, 14, 0.95)),
+    url('https://static.vecteezy.com/system/resources/previews/023/378/249/large_2x/abstract-background-esports-scifi-gaming-video-game-futuristic-neon-glow-chamber-scene-stand-pedestal-stage-virtual-reality-simulation-and-cyberpunk-ai-generated-photo.jpg') center/cover no-repeat fixed;
+  color: #e1eeeb;
+  min-height: 100vh;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+
+#content {
+  max-width: 60rem;
+  margin: 2rem auto;
+  padding: 2rem;
+  background: rgba(5, 10, 14, 0.85);
+  backdrop-filter: blur(10px);
+  border-radius: 20px;
+  box-shadow: 0 0 30px rgba(0, 245, 255, 0.15);
+}
+
+h1 {
+  font-family: 'Handjet', monospace;
+  font-size: 4rem;
+  text-align: center;
+  text-transform: uppercase;
+  color: #00f5ff;
+  text-shadow: 0 0 10px rgba(0, 245, 255, 0.5);
+}
+
+header p {
+  text-align: center;
+  color: #a2ecf0;
+  font-size: 1.2rem;
+}
+
+#player h2 span {
+  color: #00f5ff;
+}
+
+#player input {
+  background-color: #0d1c24;
+  border: 1px solid #00f5ff;
+  color: #aefaff;
+  padding: 0.4rem;
+  border-radius: 4px 0 0 4px;
+}
+
+#player button {
+  background-color: #00f5ff;
+  color: #0d1c24;
+  border: none;
+  padding: 0.4rem 1rem;
+  border-radius: 0 4px 4px 0;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+#player button:hover {
+  background-color: #7b2ff7;
+  color: white;
+}
+
+.challenge {
+  background: radial-gradient(circle at top left, #08131a, #050a0e);
+  border: 1px solid #00f5ff88;
+  color: #d9fcff;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 0 20px #00f5ff22;
+  transition: transform 0.2s ease;
+}
+
+.challenge:hover {
+  transform: scale(1.03);
+}
+
+.challenge h2 {
+  text-transform: uppercase;
+  font-size: 1.6rem;
+  color: #00f5ff;
+}
+
+.challenge-time {
+  background-color: #0d1c24;
+  border: 1px solid #00f5ff;
+  padding: 0.5rem;
+  border-radius: 6px;
+  color: #aefaff;
+}
+
+.challenge .active {
+  animation: flash 1s infinite;
+}
+
+.challenge button,
+.result-modal button {
+  background-color: #00f5ff;
+  color: #021219;
+  border: none;
+  padding: 0.5rem 1rem;
+  font-size: 1.1rem;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.challenge button:hover,
+.result-modal button:hover {
+  background-color: #7b2ff7;
+  color: #fff;
+}
+
+.result-modal {
+  background-color: #08131a;
+  border-radius: 12px;
+  padding: 2rem;
+  color: #e1eeeb;
+  border: 2px solid #00f5ff;
+}
+
+.result-modal h2 {
+  color: #00f5ff;
+  font-size: 2rem;
+  text-shadow: 0 0 8px #00f5ff88;
+}
+
+@keyframes flash {
+  0%, 100% { opacity: 0.7; }
+  50% { opacity: 1; }
+}
+
+.result-modal progress {
+  width: 100%;
+  height: 1.2rem;
+  margin-top: 1rem;
+  accent-color: #00f5ff;
+}
+/* Add to index.css */
+.challenge.active button {
+  box-shadow: 0 0 12px #00f5ff;
+  animation: pulse 1s infinite;
+}
+
+@keyframes pulse {
+  0%, 100% {
+    box-shadow: 0 0 8px #00f5ff;
+  }
+  50% {
+    box-shadow: 0 0 16px #00f5ff;
+  }
+}
