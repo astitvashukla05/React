@@ -1,0 +1,89 @@
+/* IngredList.css */
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;700&display=swap');
+
+body {
+  font-family: 'Outfit', sans-serif;
+}
+
+.ingred-section {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  justify-content: center;
+  align-items: center;
+  margin: 40px auto;
+  padding: 30px;
+  width: 90%;
+  max-width: 700px;
+  background-color: rgba(24, 26, 32, 0.6);
+  border-radius: 16px;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.5);
+  color: #eaeaea;
+}
+
+.ingred-heading {
+  font-size: 24px;
+  font-weight: 600;
+  color: #fca311;
+}
+
+.ingred-list {
+  width: 100%;
+  padding-left: 20px;
+  list-style: disc;
+}
+
+.ingred-list li {
+  color: #adb5bd;
+  font-weight: 600;
+  margin-bottom: 10px;
+  font-size: 18px;
+  transition: color 0.3s ease;
+}
+
+.ingred-list li:hover {
+  color: #f77f00;
+}
+
+.ingred-create {
+  margin-top: 20px;
+  padding: 20px;
+  background-color: rgba(20, 22, 28, 0.8);
+  border-radius: 12px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.ingred-texts h3 {
+  color: #8ecae6;
+  margin: 0;
+  font-weight: 600;
+}
+
+.ingred-gen {
+  font-size: 14px;
+  color: #bbbbbb;
+}
+
+.btn2 {
+  background-color: #14213d;
+  color: #eaeaea;
+  padding: 10px 24px;
+  font-weight: bold;
+  font-size: 16px;
+  border-radius: 8px;
+  border: none;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+.btn2:hover {
+  background-color: #26467a;
+  color: #fca311;
+  box-shadow: 0 0 12px #fca31180;
+  cursor: pointer;
+}

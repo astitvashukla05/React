@@ -1,0 +1,36 @@
+/* Header.css */
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  padding: 20px 30px;
+  background-color: rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.25);
+  border-radius: 20px;
+  margin: 40px auto;
+  width: fit-content;
+  text-align: center;
+}
+
+.header-logo {
+  height: 50px;
+  filter: drop-shadow(0 0 6px rgba(255, 255, 255, 0.4));
+}
+
+.header-title {
+  font-size: 28px;
+  font-weight: 700;
+  color: #ffffff;
+  text-shadow: 0 0 6px rgba(255, 255, 255, 0.3);
+}
+
+.header-subtitle {
+  font-size: 14px;
+  color: #dddddd;
+  margin-top: 4px;
+  letter-spacing: 0.5px;
+}

@@ -1,0 +1,48 @@
+/* ClaudeRecipe.css */
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;700&display=swap');
+
+.recipe-wrapper {
+  font-family: 'Outfit', sans-serif;
+  margin: 50px auto;
+  padding: 30px;
+  max-width: 800px;
+  background-color: rgba(24, 26, 32, 0.6);
+  border-radius: 16px;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 10px 32px rgba(0, 0, 0, 0.5);
+  color: #eaeaea;
+}
+
+.recipe-heading {
+  font-size: 28px;
+  text-align: center;
+  color: #fca311; /* deep amber/gold */
+  margin-bottom: 24px;
+  font-weight: 600;
+}
+
+.recipe-box {
+  font-size: 17px;
+  line-height: 1.7;
+  padding: 24px;
+  background-color: rgba(20, 22, 28, 0.8);
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: inset 0 0 10px rgba(255, 255, 255, 0.05);
+}
+
+.recipe-box h3,
+.recipe-box h4 {
+  color: #8ecae6; /* soft sky blue */
+  font-weight: 600;
+}
+
+.recipe-box ul {
+  padding-left: 24px;
+}
+
+.recipe-box li {
+  color: #adb5bd; /* clean gray for readability */
+  margin-bottom: 10px;
+  font-weight: 500;
+}

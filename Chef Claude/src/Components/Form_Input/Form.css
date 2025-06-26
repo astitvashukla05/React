@@ -1,0 +1,58 @@
+/* Form.css */
+.form {
+  display: flex;
+  flex-direction: row;
+  gap: 14px;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: 50px auto;
+  padding: 30px;
+  width: 90%;
+  max-width: 700px;
+  background-color: rgba(255, 255, 255, 0.07);
+  border-radius: 16px;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+}
+
+.input {
+  font-size: 16px;
+  border-radius: 8px;
+  padding: 12px 16px;
+  width: 60%;
+  min-width: 200px;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  background-color: rgba(255, 255, 255, 0.1);
+  color: #ffffff;
+  outline: none;
+  transition: all 0.3s ease;
+}
+
+.input::placeholder {
+  color: #ccc;
+}
+
+.input:focus {
+  background-color: rgba(255, 255, 255, 0.2);
+  border: 1px solid #4e9eff;
+}
+
+.btn {
+  background-color: #2c2f48;
+  color: #e0e0e0;
+  padding: 12px 22px;
+  border-radius: 8px;
+  font-weight: bold;
+  font-size: 16px;
+  transition: all 0.3s ease;
+  border: none;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.35);
+}
+
+.btn:hover {
+  background-color: #3b3f5c;
+  color: #a1c9ff;
+  box-shadow: 0 0 14px #4e9eff60;
+  cursor: pointer;
+}
