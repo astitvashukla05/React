@@ -6,7 +6,8 @@ export default function SideBar({ onClick, currProject, onSelect }) {
       className="
         w-full md:w-72
         px-6 py-10
-        bg-white/8 backdrop-blur-[8px]
+        bg-black/30 backdrop-blur-[8px]
+
         border border-white/10
         rounded-2xl
         shadow-[0_4px_10px_rgba(0,0,0,0.12)]

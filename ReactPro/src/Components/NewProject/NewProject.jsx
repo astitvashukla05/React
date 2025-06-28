@@ -25,7 +25,7 @@ export default function NewProject({ onAdd, onCancel }) {
     <div
       className="
         w-full max-w-2xl mt-16
-        bg-white/10 backdrop-blur-[16px]
+        
         rounded-3xl p-12
         shadow-xl shadow-black/25
         border border-white/20
@@ -56,7 +56,7 @@ export default function NewProject({ onAdd, onCancel }) {
           <button
             onClick={onCancel}
             className="
-              text-stone-700 hover:text-white
+              text-stone-300 hover:text-white
               transition-colors duration-300
               focus:outline-none focus:ring-2 focus:ring-stone-500
               select-none cursor-pointer

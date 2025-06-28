@@ -70,7 +70,7 @@ function App() {
         onSelect={selectProject}
       />
 
-      <div className="bg-white/10 text-white backdrop-blur-lg rounded-2xl p-6 shadow-xl transition-all w-full max-w-4xl">
+      <div className=" bg-black/30 backdrop-blur-[8px] text-white rounded-2xl p-6 shadow-xl transition-all w-full max-w-4xl">
         {content}
       </div>
     </main>
