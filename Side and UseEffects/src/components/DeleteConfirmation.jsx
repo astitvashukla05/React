@@ -1,14 +1,14 @@
 import { useEffect, useState } from "react";
-const TIMER = 5000;
+const TIMER = 3000;
 export default function DeleteConfirmation({ onConfirm, onCancel }) {
   const [closesAfter, setClosesAfter] = useState(TIMER);
   useEffect(() => {
     console.log(closesAfter);
     const time = setInterval(() => {
       setClosesAfter((prev) => {
-        return prev - 1000;
+        return prev - 10;
       });
-    }, 1000);
+    }, 10);
     return () => {
       clearInterval(time);
     };
@@ -31,7 +31,7 @@ export default function DeleteConfirmation({ onConfirm, onCancel }) {
           No
         </button>
         <button onClick={onConfirm} className="button">
-          Yes {`(${closesAfter / 1000}sec)`}
+          Yes {`(${(closesAfter / 1000).toFixed(0)}sec)`}
         </button>
       </div>
       <progress max={TIMER} value={closesAfter} />
