@@ -1,0 +1,241 @@
+/* ======= Theme 3: Elegant Dark Purple ======= */
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&family=Lato:wght@400;700&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Lato', sans-serif;
+  background: #2c1a47;
+  color: #e5d4f2;
+  min-height: 100vh;
+  padding: 3rem 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+header {
+  text-align: center;
+  margin-bottom: 3rem;
+  padding-top: 1rem;
+}
+
+header img {
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 3px solid #9b59b6;
+  box-shadow: 0 0 15px #9b59b6;
+  transition: transform 0.3s ease;
+  cursor: pointer;
+}
+
+header img:hover {
+  transform: scale(1.1) rotate(-8deg);
+}
+
+header h1 {
+  font-family: 'Quicksand', sans-serif;
+  font-weight: 700;
+  font-size: 3rem;
+  margin-top: 1rem;
+  color: #d39ffb;
+  letter-spacing: 0.15rem;
+  text-shadow: 0 0 10px #d39ffb;
+}
+
+form {
+  background: #3f2a63;
+  padding: 3rem 4rem;
+  border-radius: 16px;
+  box-shadow: 0 0 25px rgba(147, 112, 219, 0.5);
+  width: 100%;
+  max-width: 560px;
+  color: #f0e8ff;
+}
+
+form h2 {
+  font-family: 'Quicksand', sans-serif;
+  font-size: 2.5rem;
+  text-align: center;
+  margin-bottom: 0.8rem;
+  color: #d39ffb;
+}
+
+form > p {
+  text-align: center;
+  font-size: 1.1rem;
+  color: #d9c9f9;
+  margin-bottom: 2rem;
+  line-height: 1.5;
+}
+
+.control {
+  margin-bottom: 1.5rem;
+}
+
+.control-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.control-row .control {
+  flex: 1;
+  min-width: 220px;
+}
+
+.control label {
+  display: block;
+  margin-bottom: 0.4rem;
+  font-weight: 700;
+  color: #cda8ff;
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  letter-spacing: 0.03rem;
+}
+
+.control input,
+.control select {
+  width: 100%;
+  padding: 0.8rem 1rem;
+  border-radius: 8px;
+  font-size: 1rem;
+  background-color: #5b4687;
+  color: #f0e8ff;
+  border: 1px solid #a67ce7;
+  transition: all 0.3s ease;
+}
+
+.control input:focus,
+.control select:focus {
+  outline: none;
+  background-color: #7c63b9;
+  box-shadow: 0 0 12px #d39ffb;
+}
+
+.control-error {
+  color: #ff7f7f;
+  font-size: 0.9rem;
+  margin-top: 0.3rem;
+  height: 1.2rem;
+}
+
+fieldset {
+  margin-top: 2rem;
+  padding: 1.5rem 2rem;
+  border: 2px solid #9b59b6;
+  border-radius: 8px;
+  background-color: #4d3980;
+  max-width: 100%;
+}
+
+legend {
+  font-family: 'Quicksand', sans-serif;
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: #cda8ff;
+  margin-bottom: 1rem;
+  padding-left: 0.5rem;
+}
+
+fieldset .control {
+  display: flex;
+  align-items: center;
+  gap: 0.7rem;
+  margin-bottom: 1rem;
+  width: 100%;
+}
+
+fieldset .control input[type='checkbox'] {
+  width: 20px;
+  height: 20px;
+  accent-color: #9b59b6;
+  cursor: pointer;
+  flex-shrink: 0;
+}
+
+fieldset .control label {
+  font-size: 1rem;
+  color: #d9c9ff;
+  cursor: pointer;
+  user-select: none;
+  flex-grow: 1;
+  line-height: 1.3;
+  white-space: nowrap;
+}
+
+.control input[type='checkbox']#terms-and-conditions {
+  width: 1rem;
+  height: 1rem;
+  margin: 0;
+  accent-color: #9b59b6;
+}
+
+.control label[for='terms-and-conditions'] {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.6rem;
+  color: #d9c9ff;
+  cursor: pointer;
+}
+
+.form-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+.button {
+  background: linear-gradient(135deg, #9b59b6, #6c3483);
+  border: none;
+  border-radius: 10px;
+  color: #f0e8ff;
+  padding: 0.9rem 2rem;
+  font-weight: bold;
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.button:hover {
+  background: linear-gradient(135deg, #c39ffb, #8258fa);
+  box-shadow: 0 0 15px rgba(155, 89, 182, 0.7);
+}
+
+.button-flat {
+  background: none;
+  color: #c39ffb;
+  border: 2px solid #c39ffb;
+}
+
+.button-flat:hover {
+  background-color: rgba(195, 159, 251, 0.1);
+  color: #9b59b6;
+}
+
+@media (max-width: 600px) {
+  form {
+    padding: 2rem;
+  }
+  .control-row {
+    flex-direction: column;
+  }
+  .form-actions {
+    flex-direction: column;
+    align-items: stretch;
+  }
+  .form-actions .button,
+  .form-actions .button-flat {
+    width: 100%;
+    text-align: center;
+  }
+}
