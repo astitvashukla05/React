@@ -1,192 +1,223 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&family=Rubik:wght@400;600;700&display=swap');
+
+:root {
+  --primary: #fd9217;
+  --bg: #1e1f22;
+  --surface: #2b2d31;
+  --card: #33363d;
+  --text: #ffffff;
+  --muted: #9b9b9b;
+  --accent-glow: 0 0 10px rgba(253, 146, 23, 0.4);
+}
 
 * {
   box-sizing: border-box;
-}
-
-html {
-  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  transition: 0.3s ease all;
 }
 
 body {
-  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  line-height: 1.6;
   padding: 0;
-  background-color: #f9f7f3;
-  color: #353331;
+  min-height: 100vh;
 }
 
+/* ---------- Header ---------- */
 #main-header {
+  background: var(--surface);
   text-align: center;
-  background-color: #2e2923;
-  color: #d2cdc6;
-  padding: 3rem;
+  padding: 3rem 1rem;
+  border-bottom: 1px solid var(--primary);
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.5);
 }
 
-h1 {
-  font-size: 3rem;
+#main-header h1 {
   font-family: 'Rubik', sans-serif;
-  color: #fd9217;
-  margin: 0 0 1rem 0;
+  color: var(--primary);
+  font-size: 3.2rem;
+  margin-bottom: 1rem;
+  letter-spacing: -1px;
 }
 
 #main-header p {
-  max-width: 25rem;
+  max-width: 640px;
   margin: 0 auto;
+  color: var(--muted);
+  font-size: 1.1rem;
 }
 
+/* ---------- Main ---------- */
 main {
-  max-width: 50rem;
-  margin: 3rem auto;
+  max-width: 900px;
+  margin: 2rem auto;
   padding: 2rem;
-  border-left: 1px solid #353331;
-  border-right: 1px solid #353331;
 }
 
+/* ---------- Form ---------- */
 #new-opinion {
-  background-color: #2e2923;
-  color: #f9f7f3;
+  background: var(--card);
   padding: 2rem;
-  border-radius: 8px;
-  box-shadow: 0 0 16px 1px rgba(0, 0, 0, 0.5);
+  border-radius: 12px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+  border: 1px solid rgba(255, 255, 255, 0.05);
 }
 
 #new-opinion h2 {
-  color: #fcc586;
-  margin: 0;
+  font-size: 1.6rem;
+  margin-bottom: 1.5rem;
+  color: var(--primary);
 }
 
 .control-row {
   display: flex;
+  flex-wrap: wrap;
   gap: 1rem;
+  margin-bottom: 1rem;
 }
 
-.control-row .control {
+.control {
   flex: 1;
+  min-width: 200px;
 }
 
 form label {
   display: block;
-  margin-bottom: 0.25rem;
-  font-family: 'Rubik', sans-serif;
-  font-size: 0.85rem;
-  font-weight: bold;
-  color: #d2cdc6;
+  margin-bottom: 0.4rem;
+  font-weight: 600;
+  color: var(--muted);
 }
 
 form input,
 form textarea {
-  display: block;
-  font: inherit;
   width: 100%;
-  padding: 0.5rem;
-  font-family: 'Rubik', sans-serif;
-  border-radius: 4px;
-  border: 1px solid #353331;
-  background-color: #f9f7f3;
-  color: #353331;
+  padding: 0.75rem 1rem;
+  border-radius: 8px;
+  border: none;
+  background-color: #40444b;
+  color: var(--text);
+  font-size: 1rem;
+}
+
+form input:focus,
+form textarea:focus {
+  outline: none;
+  border: 2px solid var(--primary);
+  box-shadow: var(--accent-glow);
 }
 
 .actions {
   display: flex;
   justify-content: flex-end;
-  gap: 1rem;
+  margin-top: 1rem;
 }
 
 form button {
-  font: inherit;
-  padding: 0.5rem 1rem;
-  font-size: 1.25rem;
-  font-family: 'Rubik', sans-serif;
+  background: var(--primary);
+  color: #000;
   font-weight: bold;
-  color: #2e2923;
-  background-color: #fd9217;
-  border: 1px solid #fd9217;
-  border-radius: 4px;
+  font-size: 1rem;
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: 8px;
   cursor: pointer;
-}
-
-form button:disabled,
-form button:disabled:hover {
-  background-color: #869999;
-  border-color: #869999;
-  cursor: not-allowed;
+  box-shadow: var(--accent-glow);
 }
 
 form button:hover {
   background-color: #f97706;
-  border-color: #f97706;
 }
 
+form button:disabled {
+  background-color: #888;
+  color: #eee;
+  cursor: not-allowed;
+  box-shadow: none;
+}
+
+/* ---------- Errors ---------- */
 .errors {
-  list-style: none;
-  color: #fcc586;
+  color: #ffa899;
   font-size: 0.85rem;
-  padding: 0;
+  list-style: none;
   margin-top: 0.5rem;
+  padding-left: 1rem;
 }
 
+/* ---------- Opinions ---------- */
 #opinions ul {
   list-style: none;
-  margin: 0;
+  margin: 2rem 0 0;
   padding: 0;
 }
 
 #opinions li {
-  margin: 1rem 0;
-  padding: 1rem;
-  border-radius: 4px;
-  background-color: #e9decf;
+  background: var(--card);
+  border-radius: 12px;
+  padding: 1.5rem;
+  margin-bottom: 1.5rem;
+  border: 1px solid rgba(255, 255, 255, 0.04);
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
+  transition: transform 0.2s ease;
+}
+
+#opinions li:hover {
+  transform: translateY(-5px);
+  background-color: #3a3d44;
 }
 
 #opinions h3 {
-  font-family: 'Rubik', sans-serif;
-  margin: 0;
-  font-size: 1.25rem;
+  margin-bottom: 0.5rem;
+  font-size: 1.4rem;
+  color: var(--primary);
 }
 
 #opinions header p {
-  margin: 0;
-  color: #938c83;
   font-size: 0.9rem;
+  color: var(--muted);
+  margin-bottom: 1rem;
 }
 
 #opinions p {
-  font-size: 1.5rem;
+  font-size: 1.1rem;
+  color: #eee;
 }
 
+/* ---------- Voting ---------- */
 .votes {
   display: flex;
-  gap: 0.5rem;
-  margin: 0;
   align-items: center;
+  gap: 1rem;
+  margin-top: 1rem;
 }
 
 .votes span {
-  display: inline-block;
-  margin-bottom: 0.25rem;
-  font-size: 1rem;
-  color: #f97706;
+  color: var(--primary);
   font-weight: bold;
+  font-size: 1.1rem;
 }
 
 .votes button {
-  padding: 0;
-  color: #a38152;
+  background: none;
+  border: 2px solid var(--primary);
+  border-radius: 50%;
+  color: var(--primary);
+  padding: 0.4rem 0.6rem;
+  font-size: 1.1rem;
   cursor: pointer;
-  background-color: transparent;
-  border: none;
+  transition: 0.2s ease;
 }
 
 .votes button:hover {
-  background-color: transparent;
-  border: none;
-  color: #fd9217;
+  background: var(--primary);
+  color: #000;
 }
 
-.votes button:disabled,
-.votes button:disabled:hover {
-  color: #c2af93;
-  background-color: transparent;
-  border: none;
+.votes button:disabled {
+  opacity: 0.5;
   cursor: not-allowed;
+  box-shadow: none;
 }
