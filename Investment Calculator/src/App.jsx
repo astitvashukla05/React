@@ -9,6 +9,7 @@ function App() {
   const [duration, setDuration] = useState(10);
 
   const validInput= duration>=1;
+  
   function initialInvestmentChange(e) {
     setInitialInvestment(Number(e.target.value));
   }
