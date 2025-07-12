@@ -1,6 +1,7 @@
 import {createPortal} from 'react-dom'
 export default function ResultModal({ref,targetTime,timeRemaining,handleReset}){
-   const score = Math.round((timeRemaining / (targetTime * 1000)) * 100);
+   const score = Math.round(((targetTime * 1000 - timeRemaining) / (targetTime * 1000)) * 100);
+
    const result=timeRemaining>0
 
     return createPortal(
